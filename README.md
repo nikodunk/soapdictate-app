@@ -15,6 +15,7 @@ Helps healthcare providers dictate their notes with Apple's Speech Recognition A
 
 running locally:
 	
+	cd mobile_app_react_native	
 	npm install react-native-cli -g
 	npm install
 
@@ -36,7 +37,7 @@ Download Java SE Development Kit 8, Android Studio. Plug in Android device with 
 
 
 
-editor's note: To hack to newest version of react-native, simply create a new react native app, replace the package.json of this repository with the new one, then do
+editor's note: Unfortunately, there's no cleaner way to do this (see "upgrading to newest react-native version"): To upgrade to newest version of react-native, simply create a new react native app (ie. react-native init example), replace the package.json of this repository with the new example one, then do
 
 	npm install --save react-native-animatable react-native-button react-native-fontawesome react-native-html-to-pdf react-native-iap react-native-mixpanel react-native-sound react-native-voice react-navigation
 
@@ -44,7 +45,7 @@ editor's note: To hack to newest version of react-native, simply create a new re
 --------------------------------
 
 
-# Minimal email server 0.1
+# Node Express Minimal email server 0.1
 
 soapdictate uses this server to store the emails – a barebones Node.js app using [Express 4](http://expressjs.com/).
 
@@ -61,20 +62,20 @@ Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cl
 Your app should now be running on [localhost:5000](http://localhost:5000/), however you'll need PostgreSQL set up locally to run it 
 
 
-### Deploying to Heroku
+### Deploying email server to Heroku
 
 	
-	git add emailserver/
+	git add server_node_express
 	git commit -m "improved email server"
-	git push heroku `git subtree split --prefix emailserver master`:master --force
+	git push heroku `git subtree split --prefix server_node_express master`:master --force
 
 --------------------------------
 
-# Mimimal web presence at soapdictate.com written in Hugo
+# Hugo generator for mimimal web presence (static landing page) at soapdictate.com
 
 to deploy to github pages, simply run "hugo" command to build to "docs" folder and deploy.
 
-	cd static\ website\ generator/
+	cd landingpage_hugo
 	hugo
 
 This generates a "docs" folder with static website in it – move this to root of repo for publishing to Github pages or another service.
