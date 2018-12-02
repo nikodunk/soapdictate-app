@@ -64,11 +64,9 @@ Your app should now be running on [localhost:5000](http://localhost:5000/), howe
 ### Deploying to Heroku
 
 	
-	git add .
+	git add emailserver/
 	git commit -m "improved email server"
-	git push heroku master
-	heroku open
-
+	git push heroku `git subtree split --prefix emailserver master`:master --force
 
 --------------------------------
 
@@ -83,7 +81,7 @@ This generates a "docs" folder with static website in it – move this to root 
 	
 	mv docs ..
 	cd ..
-	git add .
+	git add docs/
 	git commit -m "new content update"
 	git push origin master
 
