@@ -65,7 +65,7 @@ Your app should now be running on [localhost:5000](http://localhost:5000/), howe
 
 	
 	git add .
-	git commit -m "nice commit"
+	git commit -m "improved email server"
 	git push heroku master
 	heroku open
 
@@ -76,9 +76,14 @@ Your app should now be running on [localhost:5000](http://localhost:5000/), howe
 
 to deploy to github pages, simply run "hugo" command to build to "docs" folder and deploy.
 
+	cd static\ website\ generator/
 	hugo
+
+This generates a "docs" folder with static website in it – move this to root of repo for publishing to Github pages or another service.
+	
+	mv docs ..
+	cd ..
 	git add .
 	git commit -m "new content update"
 	git push origin master
 
-docs folder will then appear at soapdictate.com
