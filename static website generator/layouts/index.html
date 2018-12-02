@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>SOAP - mobile dictate EMR notes charting and documentation</title>
+        <style>
+                body { font-family: sans-serif;}
+
+                .wrapper { 
+                  padding: 20px;     
+                } 
+
+                @keyframes shadow-pulse {
+                  0% {
+                    box-shadow: 0 0 0 0px rgba(0, 100, 255, 0.2);
+                  }
+                  100% {
+                    box-shadow: 0 0 0 35px rgba(0, 100, 255, 0);
+                  }
+                }
+
+                .example-1 {
+                  border-radius: 10px;
+                  animation: shadow-pulse 1s infinite;
+                }
+
+        </style>
+
+        <!-- Start of Async Drift Code -->
+        <script>
+        "use strict";
+
+        !function() {
+          var t = window.driftt = window.drift = window.driftt || [];
+          if (!t.init) {
+            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+            t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }, t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }), t.load = function(t) {
+              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            };
+          }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('gkc2b5c3dz4p');
+        </script>
+        <!-- End of Async Drift Code -->
+        
+    </head>
+
+    <body style="background-color: #fefcfe">
+      {{ .Content }}
+    </body>
+
+</html>
