@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, AsyncStorage, TextInput, TouchableOpacity, Alert, ImageBackground, ActivityIndicator, Image, Platform, ScrollView, KeyboardAvoidingView, Linking, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, AsyncStorage, TextInput, TouchableOpacity, Alert, ImageBackground, ActivityIndicator, Image, Platform, ScrollView, KeyboardAvoidingView, Linking } from 'react-native';
+import { SafeAreaView } from 'react-navigation'
 
 import * as Animatable from 'react-native-animatable';
 import Button from 'react-native-button';

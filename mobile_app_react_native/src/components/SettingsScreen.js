@@ -17,11 +17,10 @@ import {  StyleSheet,
           ScrollView,
           Picker,
           KeyboardAvoidingView,
-          Switch,
-          SafeAreaView } from 'react-native';
+          Switch} from 'react-native';
 import styles from './_styles'
 import * as Animatable from 'react-native-animatable';
-
+import { SafeAreaView } from 'react-navigation'
 
 var Mixpanel = require('react-native-mixpanel');
 Mixpanel = Mixpanel.default

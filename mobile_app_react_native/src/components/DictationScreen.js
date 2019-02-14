@@ -18,10 +18,9 @@ import {
   Picker,
   DatePickerIOS,
   Share,
-  Button,
-  SafeAreaView
+  Button
 } from 'react-native';
-
+import { SafeAreaView } from 'react-navigation'
 
 import * as Animatable from 'react-native-animatable';
 import FontAwesome, { Icons } from 'react-native-fontawesome';
@@ -282,7 +281,7 @@ export default class DictationScreen extends React.Component {
           // console.log(remainingtrials)
           if(remainingtrials === null ){
             // console.log('first trial dictation!')
-            AsyncStorage.setItem('remainingtrials', '8')
+            AsyncStorage.setItem('remainingtrials', '3')
             this.setState({ unlocked: true, remaining: remainingtrials })
             // console.log(this.state.unlocked)
           }
