@@ -160,7 +160,14 @@ class SettingsScreen extends React.Component {
 
                         {/* ------------------------------------------- */}
 
-                        
+
+                        {/* HIPAA DISCLAIMER */}
+                        <View style={{flex: 1, alignItems: 'center', padding: 10}}> 
+                          <Text></Text>
+                          <Text>NOTE ON HIPAA: This app is for demonstration purposes only, until Apple's Speech Recognition API adds functionality to sign a Business Associates Agreement. This app is encrypted at all levels, and your information never leaves your device except to be transcribed by Apple's Speech Recognition API. While fulfilling all technical Hipaa requirements (encrypted at rest and in transit), Apple will not sign a BAA for their Speech Recognition API, making the service NOT legally Hipaa compliant. Same as all iCloud services. While as secure as can be, this app can not legally handle PHI. Please keep PHI away from this app, or use at your own risk. This applied to every transcription service that uses Apple's Speech Recognition API. </Text>
+                        </View>                        
+
+
                         {/* EMAIL FEEDBACK */}
                         <View style={{flex: 1, alignItems: 'center', padding: 10}}>
                            <Text style={{fontWeight: 'bold', padding: 3}}>Feature missing? Have feedback?</Text>

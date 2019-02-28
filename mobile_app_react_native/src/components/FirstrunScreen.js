@@ -85,6 +85,9 @@ class AuthScreen extends React.Component {
             <KeyboardAvoidingView behavior="padding" enabled>
 
               <View style={styles.border}>
+                <Text style={{color: 'grey'}}>
+                  By entering my email below, I accept that this app is not ready for PHI ("HIPAA compliant") as as Apple may save some traces of dictate notes on their servers. Soapdictate does not save or retain any information on dictated text.{'\n'}
+                </Text>
                 <TextInput 
                     underlineColorAndroid="transparent"
                     style={styles.input}
@@ -94,16 +97,13 @@ class AuthScreen extends React.Component {
                     keyboardType={'email-address'}
                     onChangeText={ (text) => {  this.setState({email: text}) }}
                 />
-                <Button 
+                <Button
                   style={[{backgroundColor: '#2191fb' }, styles.bottomButton]}
                   onPress={() => this._onPress(this.state.email)} >
                   Continue
                 </Button>
               </View>
 
-              <Text style={{color: 'grey'}}>
-                By using this software you agree to receiving the occasional feedback or marketing email to help us improve the product for you.{'\n'}
-              </Text>
 
             </KeyboardAvoidingView>
           }
