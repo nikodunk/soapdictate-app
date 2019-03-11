@@ -83,11 +83,10 @@ class AuthScreen extends React.Component {
             
             : 
             <KeyboardAvoidingView behavior="padding" enabled>
-
+              <Text style={{color: 'grey'}}>
+                  By entering my email below, I accept that while this app does not save or retain any dictated text, Apple may save some traces of dictated notes on their servers, making this app not ready for PHI, and not HIPAA compliant until Apple changes it's policies. For demo purposes only, use at your own risk.{'\n'}
+              </Text>
               <View style={styles.border}>
-                <Text style={{color: 'grey'}}>
-                  By entering my email below, I accept that this app is not ready for PHI ("HIPAA compliant") as as Apple may save some traces of dictated notes on their servers. Soap Dictate does not save or retain any information on dictated text.{'\n'}
-                </Text>
                 <TextInput 
                     underlineColorAndroid="transparent"
                     style={styles.input}
