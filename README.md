@@ -86,3 +86,8 @@ This generates a "docs" folder with static website in it – move this to root 
 	git commit -m "new content update"
 	git push origin master
 
+
+If shit's broken after npm install in RN 57.7, just run 
+
+	cd ./node_modules/react-native && scripts/ios-install-third-party.sh && cd third-party && cd $(ls | grep 'glog' | awk '{print $1}') && ./configure
+

@@ -3,17 +3,14 @@ package com.ehrmobile;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.christopherdro.htmltopdf.RNHTMLtoPDFPackage;
-import com.christopherdro.RNPrint.RNPrintPackage;
-import com.futurice.rctaudiotoolkit.AudioPackage;
-import com.kevinejohn.RNMixpanel.RNMixpanel;
-import com.dooboolab.RNIap.RNIapPackage;
-import com.reactlibrary.RNReactNativeHapticFeedbackPackage;
+import com.wenkesj.voice.VoicePackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.zmxv.RNSound.RNSoundPackage;
-import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
-import com.rnfingerprint.FingerprintAuthPackage;
-import com.wenkesj.voice.VoicePackage;
+import com.christopherdro.RNPrint.RNPrintPackage;
+import com.kevinejohn.RNMixpanel.RNMixpanel;
+import com.dooboolab.RNIap.RNIapPackage;
+import com.christopherdro.htmltopdf.RNHTMLtoPDFPackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -34,17 +31,14 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNHTMLtoPDFPackage(),
-            new RNPrintPackage(),
-            new AudioPackage(),
-            new RNMixpanel(),
-            new RNIapPackage(),
-            new RNReactNativeHapticFeedbackPackage(),
+            new VoicePackage(),
             new VectorIconsPackage(),
             new RNSoundPackage(),
-            new GoogleAnalyticsBridgePackage(),
-            new FingerprintAuthPackage(),
-            new VoicePackage()
+            new RNPrintPackage(),
+            new RNMixpanel(),
+            new RNIapPackage(),
+            new RNHTMLtoPDFPackage(),
+            new RNGestureHandlerPackage()
       );
     }
 

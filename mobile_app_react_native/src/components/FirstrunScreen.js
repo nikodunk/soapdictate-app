@@ -86,7 +86,7 @@ class AuthScreen extends React.Component {
 
               <View style={styles.border}>
                 <Text style={{color: 'grey'}}>
-                  By entering my email below, I accept that this app is not ready for PHI ("HIPAA compliant") as as Apple may save some traces of dictate notes on their servers. Soapdictate does not save or retain any information on dictated text.{'\n'}
+                  By entering my email below, I accept that this app is not ready for PHI ("HIPAA compliant") as as Apple may save some traces of dictated notes on their servers. Soap Dictate does not save or retain any information on dictated text.{'\n'}
                 </Text>
                 <TextInput 
                     underlineColorAndroid="transparent"
